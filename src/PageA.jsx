@@ -18,11 +18,22 @@ export default class PageA extends React.Component{
     }
 
 	/* direct go */
+	/*render() {
+		return (
+			<div>
+				<div>Now in page: {this.props.name||"A&&"}<br/><br/>
+					<a className="button" onClick={this.handleSubmit.bind(this,{name:"B!"})}> Go to Page B</a>
+				</div>
+			</div>
+			);
+	}*/
+
+	/* using route like left-bar.jsx done */
 	render() {
 		return (
 			<div>
-				<div>Now in page: {this.props.name}<br/><br/>
-					<a className="button" onClick={this.handleSubmit.bind(this,{name:"B!"})}> Go to Page B</a>
+				<div>Now in page: {this.props.name||"A for route"}<br/><br/>
+					<li><Link to="/PageB"> Route to Page B</Link></li>
 				</div>
 			</div>
 			);

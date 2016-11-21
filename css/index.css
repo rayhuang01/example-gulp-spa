@@ -13,7 +13,7 @@ body {
   height: calc(100vh);
   background-color: #e6e6e6;
   position: fixed;
-  top: 0em;
+  top: 2.6em;
   z-index: 100; }
   .slide-bar ul li {
     list-style: none; }

@@ -4,12 +4,14 @@ import {Router, Route, IndexRoute, withRouter, Link, IndexLink, hashHistory, bro
 import PageA from './PageA';
 import PageB from './PageB';
 import LeftBar from './left-bar';
+import Timer from './timer';
 
 class HelloWorld extends React.Component{
 	render() {
 		return (
 			<div>
 				<LeftBar/>
+				<Timer/>
 				<div id="wrapper">
 					{this.props.children||<PageB name="B$$$"/>}
 				</div>
