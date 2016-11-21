@@ -13,7 +13,7 @@ class HelloWorld extends React.Component{
 				<LeftBar/>
 				<Timer/>
 				<div id="wrapper">
-					{this.props.children||<PageB name="B$$$"/>}
+					{this.props.children||<PageB name="B(Initial)"/>}
 				</div>
 			</div>
 		);
